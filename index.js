@@ -1,6 +1,9 @@
 const express = require('express');
+var cors = require('cors')
 const app = express();
 
+
+app.use(cors());
 const alphabets=[
     {id:1, alpha:"A",name:"Apple",image_link:"https://purepng.com/public/uploads/large/purepng.com-fresh-applefoodsweettastyhealthyfruitappleleaf-981524677946vfurf.png"},
     {id:2, alpha:"B",name:"Ball",image_link:"https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png"},
